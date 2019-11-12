@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <Link rel=“stylesheet” type=“text/css” href=“style.css”>
+</head>
+<body>
+
+    <div class ="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 mx-auto" >
+                <div class="content" style = "margin-top: 10px; margin-bottom: 10px; background-color: teal; padding: 20px; width: 100%;">
+
+                    <h4 style = "color: gold;">Random Password Generator</h4>
+                    <br />
+                    <input type="text" id="display" style = "width: 100%">
+                    <br />
+                    <input type="range" min= "8" max = "128" name="slider" id="slider" style = " width: 100%">
+                    <br />
+                    <button onclick="generatePass()" style = "border: 10px;">Generate Password</button> 
+                    <button onclick="copyPass()" style = "border: 10px;">Copy to Clipboard</button>
+                    <div id="length" style = "display: inline-block; width: 100%; color: gold;"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  <script src="script.js"></script>  
+</body>
+</html>
